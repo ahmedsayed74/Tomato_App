@@ -5,7 +5,7 @@ import 'package:tomato_app/widgets/Custom_Button.dart';
 import 'package:tomato_app/widgets/Custom_Circle_Avatar_Text.dart';
 
 class CustomFarmerCard extends StatelessWidget {
-  CustomFarmerCard({super.key});
+  const CustomFarmerCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class CustomFarmerCard extends StatelessWidget {
         border: Border.all(width: 0.4, color: Colors.grey),
         color: const Color(0xffFFFFFF),
       ),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           CustomCircleAvatarText(
@@ -28,10 +28,10 @@ class CustomFarmerCard extends StatelessWidget {
               color: kPraimaryColor,
               subtitle:
                   'Diagnose plant diseases, get care guides, and maintain healthy tomato crops'),
-          const SizedBox(
+          SizedBox(
             height: 24,
           ),
-          const CustomButton(
+          CustomButton(
             title: 'Enter as Farmer',
             color: kPraimaryColor,
           ),

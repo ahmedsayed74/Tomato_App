@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tomato_app/Constants.dart';
 
 class ElevatedBuProceedCart extends StatefulWidget {
-  ElevatedBuProceedCart({super.key});
+  const ElevatedBuProceedCart({super.key});
 
   @override
   State<ElevatedBuProceedCart> createState() => _ElevatedBuProceedCartState();

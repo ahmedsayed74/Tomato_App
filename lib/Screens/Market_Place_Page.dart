@@ -1,10 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tomato_app/Constants.dart';
-import 'package:tomato_app/Screens/Home_Page.dart';
-import 'package:tomato_app/Screens/NewScreens.dart';
 import 'package:tomato_app/Screens/Proceed_Cart.dart';
 import 'package:tomato_app/widgets/MarcetPlaceDetials.dart';
 
@@ -14,7 +10,7 @@ class MarketPlacePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffFEF4F4),
+      backgroundColor: const Color(0xffFEF4F4),
       bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.red,
           selectedItemColor: Colors.white,
@@ -42,9 +38,9 @@ class MarketPlacePage extends StatelessWidget {
                 label: 'Home'),
           ]),
       appBar: AppBar(
-        surfaceTintColor: Color(0xffFEE2E2),
+        surfaceTintColor: const Color(0xffFEE2E2),
         automaticallyImplyLeading: false,
-        backgroundColor: Color(0xffFEE2E2),
+        backgroundColor: const Color(0xffFEE2E2),
         title: const Text(
           'Tomato Marketplace',
           style: TextStyle(
@@ -68,15 +64,16 @@ class MarketPlacePage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 20),
         child: ListView(
-          children: [
-            const Text(
+          //TODO: Use ListView.builder (Preferred) يا موكوس
+          children: const [
+             Text(
               'Available Tomatoes',
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 24,
                   fontWeight: FontWeight.w500),
             ),
-            const SizedBox(
+             SizedBox(
               height: 12,
             ),
             Marketplacedetials(
@@ -85,7 +82,7 @@ class MarketPlacePage extends StatelessWidget {
               qualityText: '95%',
               price: r'$3.99',
             ),
-            const SizedBox(
+             SizedBox(
               height: 16,
             ),
             Marketplacedetials(
@@ -94,7 +91,7 @@ class MarketPlacePage extends StatelessWidget {
               qualityText: '95%',
               price: r'$3.99',
             ),
-            const SizedBox(
+             SizedBox(
               height: 16,
             ),
             Marketplacedetials(
@@ -103,7 +100,7 @@ class MarketPlacePage extends StatelessWidget {
               qualityText: '95%',
               price: r'$3.99',
             ),
-            const SizedBox(
+            SizedBox(
               height: 16,
             ),
             Marketplacedetials(
@@ -112,10 +109,10 @@ class MarketPlacePage extends StatelessWidget {
               qualityText: '95%',
               price: r'$3.99',
             ),
-            const SizedBox(
+            SizedBox(
               height: 16,
             ),
-            Marketplacedetials(
+           Marketplacedetials(
               textTitle: 'Beefsteak Tomatoes',
               farmText: 'Sunshine Farms',
               qualityText: '95%',

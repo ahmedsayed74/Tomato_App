@@ -9,15 +9,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF2FDF6),
+      backgroundColor: const Color(0xffF2FDF6),
       body: Padding(
         padding: const EdgeInsets.only(top: 70, left: 12, right: 12),
         child: ListView(
-          children: [
+          children: const [
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(
+                Text(
                   'Welcome To',
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
                     color: Color(0xff166534),
                   ),
                 ),
-                const Text(
+                Text(
                   textAlign: TextAlign.center,
                   'Tomato Connect',
                   style: TextStyle(
@@ -34,25 +34,25 @@ class HomePage extends StatelessWidget {
                     color: Color(0xff166534),
                   ),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 16,
                 ),
-                const Text(
+                Text(
                   'Choose your role to get started',
                   style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
                       color: kThirdColor),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 32,
                 ),
                 CustomFarmerCard(),
-                const SizedBox(
+                SizedBox(
                   height: 40,
                 ),
                 CustomBuyerCard(),
-                const SizedBox(
+                SizedBox(
                   height: 40,
                 )
               ],

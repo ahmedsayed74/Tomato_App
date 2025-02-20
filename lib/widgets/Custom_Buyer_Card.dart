@@ -6,7 +6,7 @@ import 'package:tomato_app/widgets/Custom_Button.dart';
 import 'package:tomato_app/widgets/Custom_Circle_Avatar_Text.dart';
 
 class CustomBuyerCard extends StatelessWidget {
-  CustomBuyerCard({super.key});
+  const CustomBuyerCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,10 +21,10 @@ class CustomBuyerCard extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CustomCircleAvatarText(
+          const CustomCircleAvatarText(
               icon: FontAwesomeIcons.cartShopping,
               color: kSecondaryColor,
-              backgroundColor:const Color(0xffFEE2E2),
+              backgroundColor:Color(0xffFEE2E2),
               titleColor: kSecondaryColor,
               title: 'I am a Buyer',
               subtitle:
