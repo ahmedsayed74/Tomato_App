@@ -1,22 +1,20 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:tomato_app/Constants.dart';
-import 'package:tomato_app/Screens/Home_Page.dart';
 import 'package:tomato_app/widgets/View_Button_Detials.dart';
 
 class Marketplacedetials extends StatelessWidget {
-  Marketplacedetials({
+  const Marketplacedetials({
     super.key,
     required this.textTitle,
     required this.farmText,
     required this.qualityText,
     required this.price,
   });
-  String textTitle;
-  String farmText;
-  String qualityText;
-  String price;
+  final String textTitle;
+  final String farmText;
+  final String qualityText;
+  final String price;
   @override
   Widget build(BuildContext context) {
     return Container(

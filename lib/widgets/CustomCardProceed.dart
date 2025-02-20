@@ -16,6 +16,7 @@ class Customcardproceed extends StatefulWidget {
 
 class _CustomcardproceedState extends State<Customcardproceed> {
   double price = 3.5;
+  double totalprice = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +45,7 @@ class _CustomcardproceedState extends State<Customcardproceed> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        '${widget.titleText}',
+                        widget.titleText,
                         style: const TextStyle(
                             color: Colors.black,
                             fontSize: 16,
@@ -55,7 +56,7 @@ class _CustomcardproceedState extends State<Customcardproceed> {
                       ),
                       const Text(
                         'Tomatoes',
-                        style: const TextStyle(
+                        style: TextStyle(
                             color: Colors.black,
                             fontSize: 13,
                             fontWeight: FontWeight.w400),
@@ -73,7 +74,7 @@ class _CustomcardproceedState extends State<Customcardproceed> {
                     ],
                   ),
                 ),
-                ElevatedBuProceedCart(),
+                const ElevatedBuProceedCart(),
               ],
             ),
           ),
@@ -98,7 +99,7 @@ class _CustomcardproceedState extends State<Customcardproceed> {
               GestureDetector(
                 onTap: () {
                   setState(() {
-                    double totalprice = price + price;
+                    totalprice = price + price;
                   });
                 },
                 child: Container(
@@ -107,7 +108,7 @@ class _CustomcardproceedState extends State<Customcardproceed> {
                   decoration: BoxDecoration(
                       color: kPraimaryColor,
                       borderRadius: BorderRadius.circular(10)),
-                  child: Center(
+                  child: const Center(
                       child: Text(
                     'Proceed to checkout',
                     style: TextStyle(color: Colors.white),

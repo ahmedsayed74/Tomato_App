@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tomato_app/Constants.dart';
 
 class CustomCircleAvatarText extends StatelessWidget {
-  CustomCircleAvatarText(
+  const CustomCircleAvatarText(
       {super.key,
       required this.icon,
       required this.backgroundColor,
@@ -28,7 +28,7 @@ class CustomCircleAvatarText extends StatelessWidget {
             color: color,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 12,
         ),
         Text(
@@ -42,7 +42,7 @@ class CustomCircleAvatarText extends StatelessWidget {
         Text(
           textAlign: TextAlign.center,
           subtitle,
-          style: TextStyle(
+          style: const TextStyle(
               color: kThirdColor, fontSize: 16, fontWeight: FontWeight.w300),
         ),
       ],
