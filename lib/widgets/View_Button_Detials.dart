@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tomato_app/Constants.dart';
+import 'package:tomato_app/Screens/example_detail.dart';
 import 'package:tomato_app/utils.dart';
 
 class ViewButtonDetials extends StatelessWidget {
@@ -9,7 +10,9 @@ class ViewButtonDetials extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-        Navigator.pushNamed(context, "example",arguments: ScreenArguments("ID", "Mawkoos"));
+        Navigator.pushNamed(context, ExampleDetail.routeName,
+        arguments: ScreenArguments("ID", "Mawkoos"),
+        );
       },
       child: Container(
         width: 100,
